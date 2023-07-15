@@ -10,6 +10,7 @@ makeCacheMatrix <- function(x = matrix(sample(1:100,9),3,3)) {
     s <<- NULL
   }
   get <- function() x
+    ## Function to set the matrix
   setsolve <- function(solve) s <<- solve
   getsolve <- function() s
   list(set = set, get = get,
